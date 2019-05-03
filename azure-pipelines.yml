@@ -7,3 +7,4 @@ steps:
     sudo npm install -g @angular/cli
     sudo npm install
     sudo ng build --prod
+    sudo ng test
