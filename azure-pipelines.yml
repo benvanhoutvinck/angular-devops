@@ -1,6 +1,7 @@
 variables:
   buildConfiguration: 'Release'
-
+pool:
+    vmImage: 'macOS-10.14'
 steps:
 
 - task: Npm@1
