@@ -1,7 +1,7 @@
 variables:
   buildConfiguration: 'Release'
 pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'vs2017-win2016'
 steps:
 - script: |
     sudo npm install -g @angular/cli
