@@ -6,7 +6,7 @@ steps:
 
 - script: npm install
 
-- script: ng build
+- script: npm run compile
 
 - task: PublishPipelineArtifact@0
   inputs:
