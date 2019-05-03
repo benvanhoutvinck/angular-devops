@@ -3,12 +3,7 @@ variables:
 pool:
     vmImage: 'macOS-10.14'
 steps:
-
-- script: npm install
-
-- script: npm run compile
-
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'angular'
-    targetPath: 'src/angular-devops/dist'
+- script: |
+    npm install -g @angular/cli
+    npm install
+    ng build --prod
