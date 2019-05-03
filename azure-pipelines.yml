@@ -6,12 +6,7 @@ steps:
 
 - script: npm install
 
-- task: Npm@1
-  displayName: 'Build Angular'
-  inputs:
-    command: custom
-    customCommand: run build -- --prod
-    workingDir: src/angular-devops
+- script: ng build
 
 - task: PublishPipelineArtifact@0
   inputs:
