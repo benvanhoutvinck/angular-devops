@@ -1,7 +1,7 @@
 variables:
   buildConfiguration: 'Release'
 pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'macOS-10.14'
 steps:
 - script: |
     npm install -g @angular/cli
