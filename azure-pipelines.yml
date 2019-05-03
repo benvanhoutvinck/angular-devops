@@ -4,7 +4,7 @@ pool:
     vmImage: 'vs2017-win2016'
 steps:
 - script: |
-    sudo npm install -g @angular/cli
-    sudo npm install
-    sudo ng build --prod
-    sudo ng test
+    npm install -g @angular/cli
+    npm install
+    ng build --prod
+    ng test
